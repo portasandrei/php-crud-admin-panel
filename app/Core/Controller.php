@@ -2,7 +2,7 @@
 
 namespace App\Core;
 
-class Controller
+class Controller extends Auth
 {
 
     protected function view(string $view, array $data = [], ?string $layout = null): void
@@ -12,6 +12,9 @@ class Controller
 
         if (str_contains($classNamespace, '\Admin\\')) {
             $zone = 'admin';
+
+            Auth::request();
+
             $defaultLayout = 'admin';
         } else {
             $zone = 'frontend';
