@@ -8,6 +8,6 @@ return function($router) {
     $router->add('GET', '/', [IndexController::class, 'index']);
     $router->add('GET', '/about', [IndexController::class, 'about']);
 
-    $router->add('GET', '/admin/login', [Admin\IndexController::class, 'login']);
+    $router->add('GET', '/admin/login', [Admin\LoginController::class, 'index']);
     $router->add('GET', '/admin', [Admin\IndexController::class, 'index']);
 };

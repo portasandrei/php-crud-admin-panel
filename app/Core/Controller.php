@@ -13,7 +13,11 @@ class Controller extends Auth
         if (str_contains($classNamespace, '\Admin\\')) {
             $zone = 'admin';
 
-            Auth::request();
+            // Skip authentication check for login page
+            $currentUrl = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+            if ($currentUrl !== '/admin/login') {
+                Auth::check();
+            }
 
             $defaultLayout = 'admin';
         } else {
