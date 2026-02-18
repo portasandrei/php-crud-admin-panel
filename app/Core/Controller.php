@@ -27,7 +27,7 @@ class Controller extends Auth
 
         $layout = $layout ?? $defaultLayout;
 
-        $viewPath = ROOT . "/views/{$zone}/pages/{$view}.php";
+        $viewPath = ROOT . "/resources/views/{$zone}/pages/{$view}.php";
 
         if (!file_exists($viewPath)) {
             throw new \Exception("View file not found: {$viewPath}");
@@ -40,7 +40,7 @@ class Controller extends Auth
 
         $content = ob_get_clean();
 
-        $layoutPath = ROOT . "/views/{$zone}/layouts/{$layout}.php";
+        $layoutPath = ROOT . "/resources/views/{$zone}/layouts/{$layout}.php";
         if (!file_exists($layoutPath)) {
             throw new \Exception("Layout {$layout} not found in {$zone}/layouts");
         }

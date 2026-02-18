@@ -1,0 +1,10 @@
+---
+description: Do not modify the codebase without explicit user permission
+alwaysApply: true
+---
+
+# No Changes Without Permission
+
+- **Do not** edit, change, delete, or add any files, code, or folders without the user's explicit permission.
+- Before making any modification to the project (edits, new files, deletions, new folders), ask for confirmation or wait for the user to request the change.
+- Explanations, suggestions, and showing example code in the chat are allowed; applying those changes to the repo is not unless the user approves.

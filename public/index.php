@@ -4,18 +4,15 @@
 
     define('ROOT', dirname(__DIR__));
 
-    require_once ROOT . '/bootstrap/Env.php';
     require_once ROOT . '/app/Core/Autoloader.php';
 
     use App\Core\Autoloader;
     use App\Core\Router;
     use App\Bootstrap\Env;
 
-    Env::getInstance(ROOT . '/.env');
-
-
-    // Register the autoloader
     Autoloader::register();
+
+    Env::getInstance(ROOT . '/.env');
 
 
     // Initialize Router

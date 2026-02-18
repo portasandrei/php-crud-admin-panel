@@ -28,7 +28,6 @@
             <div class="form-group">
                 <button type="submit">Login</button>
             </div>
-            
         </form>
     </div>
 </section>

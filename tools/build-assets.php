@@ -31,10 +31,10 @@
 
     // Source and destination folders
     $assets = [
-        ['src' => ROOT . '/assets/admin/css', 'dst' => ROOT . '/public/assets/admin/css', 'minify' => 'minifyCss', 'ext' => 'css'],
-        ['src' => ROOT . '/assets/css', 'dst' => ROOT . '/public/assets/css', 'minify' => 'minifyCss', 'ext' => 'css'],
-        ['src' => ROOT . '/assets/admin/js', 'dst' => ROOT . '/public/assets/admin/js', 'minify' => 'minifyJs', 'ext' => 'js'],
-        ['src' => ROOT . '/assets/js', 'dst' => ROOT . '/public/assets/js', 'minify' => 'minifyJs', 'ext' => 'js']
+        ['src' => ROOT . '/resources/assets/admin/css', 'dst' => ROOT . '/public/assets/admin/css', 'minify' => 'minifyCss', 'ext' => 'css'],
+        ['src' => ROOT . '/resources/assets/css', 'dst' => ROOT . '/public/assets/css', 'minify' => 'minifyCss', 'ext' => 'css'],
+        ['src' => ROOT . '/resources/assets/admin/js', 'dst' => ROOT . '/public/assets/admin/js', 'minify' => 'minifyJs', 'ext' => 'js'],
+        ['src' => ROOT . '/resources/assets/js', 'dst' => ROOT . '/public/assets/js', 'minify' => 'minifyJs', 'ext' => 'js']
     ];
 
     foreach ($assets as $asset) {

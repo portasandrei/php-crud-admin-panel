@@ -9,4 +9,9 @@
  
 <section>
     <p><?= $content ?? '' ?></p>
+    <p>Current HTTP Status: 
+        <?php
+            var_dump($httpCodeMessage); 
+        ?>
+    </p>
 </section>

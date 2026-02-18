@@ -9,10 +9,10 @@ class AssetController
 {
     // Source and destination folders
     private array $assets = [
-        ['src' => '/assets/admin/css', 'dst' => '/public/assets/admin/css', 'minify' => 'minifyCss', 'ext' => 'css'],
-        ['src' => '/assets/css', 'dst' => '/public/assets/css', 'minify' => 'minifyCss', 'ext' => 'css'],
-        ['src' => '/assets/admin/js', 'dst' => '/public/assets/admin/js', 'minify' => 'minifyJs', 'ext' => 'js'],
-        ['src' => '/assets/js', 'dst' => '/public/assets/js', 'minify' => 'minifyJs', 'ext' => 'js']
+        ['src' => '/resources/assets/admin/css', 'dst' => '/public/assets/admin/css', 'minify' => 'minifyCss', 'ext' => 'css'],
+        ['src' => '/resources/assets/css', 'dst' => '/public/assets/css', 'minify' => 'minifyCss', 'ext' => 'css'],
+        ['src' => '/resources/assets/admin/js', 'dst' => '/public/assets/admin/js', 'minify' => 'minifyJs', 'ext' => 'js'],
+        ['src' => '/resources/assets/js', 'dst' => '/public/assets/js', 'minify' => 'minifyJs', 'ext' => 'js']
     ];
 
     public function build(): void
